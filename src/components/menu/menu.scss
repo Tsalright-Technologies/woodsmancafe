@@ -1,0 +1,40 @@
+div.menuDiv {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+
+  h4 {
+    margin: 0;
+  }
+
+  div.menuItems {
+    border: 1px solid white;
+    width: 40%;
+    margin: 1em;
+    height: auto;
+    flex-direction: column;
+
+    &.Sides {
+      height: auto;
+    }
+  }
+
+  ul.menuItemUl {
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    .itemCollection {
+      img.bigFoot {
+        width: 1em;
+        margin-right: .5em;
+      }
+
+      &.Sides {
+        height: auto;
+        margin: 0;
+      }
+    }
+  }
+}
