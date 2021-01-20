@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: #9D9E99;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  main{
+    flex: 1;
+    height: auto;
+    padding: 1rem;
+    border: ridge;
+    width: 90%;
+    margin: 2em auto;
+
+
+  }
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Logger';
+  src: local('LOGGER'), url(./fonts/LOGGER.woff) format('woff');
+}

@@ -1,0 +1,9 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+  .welcome-image {
+    color: white;
+    align-self: flex-end;
+  }
+}

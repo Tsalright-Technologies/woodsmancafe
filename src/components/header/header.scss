@@ -1,0 +1,40 @@
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: .5rem solid #8C2034;
+    border-top: .5rem solid #8C2034;
+    background-image: linear-gradient(#725C70, #95CC6E, #5F5860, black);
+
+    
+
+    nav {
+        a {
+            color: #A6671B;
+                
+        }
+
+        
+        ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+            li {
+                padding: 0 1em 1em 1em;
+                font-size: 1.75em;
+                font-weight: bold;
+
+            }
+        }
+    }
+
+    .logo {
+        font-family: 'Logger';
+        color: #A6671B;
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+    
+}
