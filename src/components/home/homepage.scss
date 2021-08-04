@@ -2,8 +2,29 @@ main {
   display: flex;
   flex-direction: column;
 
-  .welcome-image {
-    color: white;
-    align-self: flex-end;
+  div.welcome-msg {
+    align-self: center;
+    margin-bottom: 3em;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+  div.welcome-image {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    align-self: flex-start;
+  
+    .woodsman-img {
+      border-radius: 50px;
+      width: 429px;
+      height: 288px;
+      box-shadow: 4px 4px 6px #000;
+    }
+
+    // p {
+    //   padding-left: 5em;
+    // }
   }
 }

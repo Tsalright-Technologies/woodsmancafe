@@ -10,7 +10,10 @@ import './styles.scss';
 import Home from './components/home/homepage.js'
 import About from './components/about/about.js';
 import LovinScoopful from './components/lovin-scoopful/scoopful.js';
-import Menu from './components/menu/menu.js';
+import BreakfastMenu from './components/menu/breakfast/breakfast-menu.js';
+import KidsMenu from "./components/menu/kids/kids-menu.js";
+import LunchMenu from "./components/menu/main/main-menu.js";
+import DinnerMenu from "./components/menu/dinner/dinner-menu.js";
 
 class App extends React.Component {
 
@@ -21,9 +24,12 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route exact path='/lovinscoopful' component={LovinScoopful}/>
+          <Route exact path='/lovin-scoopful' component={LovinScoopful}/>
           <Route exact path='/about' component={About}/>
-          <Route exact path='/menu' component={Menu} />
+          <Route exact path='/breakfast-menu' component={BreakfastMenu} />
+          <Route exact path='/kids-menu' component={KidsMenu} />
+          <Route exact path='/dinner-menu' component={DinnerMenu}/>
+          <Route exact path='/lunch-menu' component={LunchMenu}/>
         </Switch>
         <Footer />
       </>
