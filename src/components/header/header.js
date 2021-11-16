@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.scss";
 
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -10,16 +10,18 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to='/'>Home</Link>
+            <NavLink className="navLinks" to='/'>Home</NavLink>
+          </li>
+          <li className="dropdown">
+            <NavLink className="dropbtn navLinks" to='/'>Menu</NavLink>
+            <div className='dropdown-content'>
+              <NavLink className="subMenu" to='/kids-menu'>Kids Menu</NavLink>
+              <NavLink className="subMenu" to='/breakfast-menu'>Breakfast Menu</NavLink>
+              <NavLink className="subMenu" to='/main-menu'>Main Menu</NavLink>
+            </div>
           </li>
           <li>
-            <NavLink to='/lovinscoopful'>Lovin Scoopful</NavLink>
-          </li>
-          <li>
-            <NavLink to='/about'>About</NavLink>
-          </li>
-          <li>
-            <NavLink to='/menu'>Menu</NavLink>
+            <NavLink className="navLinks" to='/lovin-scoopful'>Lovin Scoopful</NavLink>
           </li>
         </ul>
       </nav>

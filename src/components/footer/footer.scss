@@ -2,9 +2,13 @@
     display: flex;
     justify-content: center;
     background-image: linear-gradient(#725C70, #95CC6E, #5F5860, black);
-    border-bottom: .5rem solid #8C2034;
-    border-top: .5rem solid #8C2034;
+    border-bottom: .5rem ridge #8C2034;
+    border-top: .5rem ridge #8C2034;
 
+    .footer-margin {
+        margin: auto;
+        display: flex;
+    }
 
     h3 {
         margin: 0;
@@ -12,7 +16,14 @@
     .footer-item {
         height: auto;
         margin: 1em 3em;
-        font-size: 1.25em;
+        font-size: 1em;
+        color: #966e33d8;
+        text-shadow: -1px 1px 0 #000;
+        
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
         
     }
 }

@@ -1,18 +1,24 @@
 div.menuDiv {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   height: auto;
-
-  h4 {
-    margin: 0;
+  width: 85%;
+  margin: auto;
+  // align-items: flex-start; 
+  
+  h2{
+    margin: auto;
+    font-size: 3em;
   }
 
+
+
   div.menuItems {
-    border: 1px solid white;
-    width: 40%;
-    margin: 1em;
-    height: auto;
+    display: flex;
     flex-direction: column;
+    // margin: auto;
+    height: auto;
+    // align-items: flex-start;
 
     &.Sides {
       height: auto;
@@ -20,15 +26,43 @@ div.menuDiv {
   }
 
   ul.menuItemUl {
-    padding: 0 1rem 1rem;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    // justify-items: flex-start;
+    padding: 0 1rem 1rem;
     list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
 
-    .itemCollection {
+
+    li.itemCollection {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      // justify-content: flex-start;
+      padding: 0 1em;
+      text-align: center;
+      
+
+      h4{
+        font-size: 1.5em;
+        margin: 0;
+
+      }
+
+      // &.houseFavorite {
+      //     padding-left: 0;
+
+      // }
+
+      p{
+        margin-top: 0;
+        font-size: 1.25em;
+      }
       img.bigFoot {
-        width: 1em;
-        margin-right: .5em;
+        width: .65em;
+        margin-right: .25em;
+        height: .75em;
       }
 
       &.Sides {

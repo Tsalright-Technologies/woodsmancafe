@@ -5,31 +5,41 @@ export default function Footer() {
   return (
     <>
       <footer className="footerContainer">
-        <div className="footer-item">
-          <h3>Hours</h3>
-          <span>
-            M - TH 6AM - 7PM
-            <br />
-            F - Sa 6AM - 8PM
-            <br />
-            Su 6AM - 2PM
-          </span>
-        </div>
-        <div className="footer-item">
-          <h3>Resources</h3>
-          <span>
-            Lovin Scoopful
-            <br />
-            Menu
-          </span>
-        </div>
-        <div className="footer-item">
-          <h3>Contact:</h3>
-          <span>
-            (218) 566-2080
-            <br />
-            woody@woodsmancafe.com
-          </span>
+        <div className="footer-margin">
+          <div className="footer-item">
+            <h3>Hours</h3>
+            <ul>
+              <li>M - TH: 6AM - 7PM</li> 
+              <li>
+                F - Sa: 6AM - 8PM
+              </li>
+              <li>
+                Su: 6AM - 2PM
+              </li>
+            </ul>
+          </div>
+          <div className="footer-item">
+            <h3>Resources</h3>
+            <ul>
+              <li>
+                Lovin Scoopful
+              </li>
+              <li>
+                Menu
+              </li>
+            </ul>
+          </div>
+          <div className="footer-item">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                Phone: (218) 566-2080
+              </li>
+              <li>
+                Email: woody@woodsmancafe.com              
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </>
