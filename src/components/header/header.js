@@ -17,8 +17,7 @@ export default function Header() {
             <div className='dropdown-content'>
               <NavLink className="subMenu" to='/kids-menu'>Kids Menu</NavLink>
               <NavLink className="subMenu" to='/breakfast-menu'>Breakfast Menu</NavLink>
-              <NavLink className="subMenu" to='/lunch-menu'>Lunch Menu</NavLink>
-              <NavLink className="subMenu" to='/dinner-menu'>Dinner Menu</NavLink>
+              <NavLink className="subMenu" to='/main-menu'>Main Menu</NavLink>
             </div>
           </li>
           <li>

@@ -1,18 +1,46 @@
 import React from "react";
-import Logger from "../../../images/logger.jpg";
-import Chili from "../../../images/chili.jpg";
+import { useQuery } from "@apollo/react-hooks";
+import gql from "graphql-tag";
+import Item from "../item.js"
 
+import "../menu.scss";
 
-function LunchMenu() {
+function Main() {
+  const GET_ITEMS = gql`
+    {
+      subMenuCollection(where: { name_contains: "Main"}, order: [displayOrder_ASC]) {
+        items {
+          name
+          displayName
+          displayOrder
+          itemsCollection {
+            items {
+              ... on MenuItem {
+                name
+                ingredients
+                price
+                houseFavorite
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const { loading, error, data } = useQuery(GET_ITEMS);
+
+  if (error) return <h1>Something is wrong!!</h1>;
+  if (loading) return <h1>Loading...</h1>;
+
   return (
     <>
+      {console.log(data)}
       <main>
-      <h1>I am the Lunch Menu</h1>
-      <img src={Logger} alt="Logger"/>
-      <img src={Chili} alt="Chili"/>
+        <Item data={data.subMenuCollection} />
       </main>
-    </> 
-  )
+    </>
+  );
 }
 
-export default LunchMenu;
+export default Main;

@@ -12,8 +12,8 @@ import About from './components/about/about.js';
 import LovinScoopful from './components/lovin-scoopful/scoopful.js';
 import BreakfastMenu from './components/menu/breakfast/breakfast-menu.js';
 import KidsMenu from "./components/menu/kids/kids-menu.js";
-import LunchMenu from "./components/menu/main/main-menu.js";
-import DinnerMenu from "./components/menu/dinner/dinner-menu.js";
+import Main from "./components/menu/main/main-menu.js";
+// import DinnerMenu from "./components/menu/dinner/dinner-menu.js";
 
 class App extends React.Component {
 
@@ -28,8 +28,7 @@ class App extends React.Component {
           <Route exact path='/about' component={About}/>
           <Route exact path='/breakfast-menu' component={BreakfastMenu} />
           <Route exact path='/kids-menu' component={KidsMenu} />
-          <Route exact path='/dinner-menu' component={DinnerMenu}/>
-          <Route exact path='/lunch-menu' component={LunchMenu}/>
+          <Route exact path='/main-menu' component={Main}/>
         </Switch>
         <Footer />
       </>

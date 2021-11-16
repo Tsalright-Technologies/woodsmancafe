@@ -13,7 +13,7 @@ function Item(props) {
     <div className="menuDiv">
       {props.data.items.map((obj) => (
         <div className={`menuItems ${obj.name}`} key={`${obj.name}`}>
-          <h2>{obj.name}</h2>
+          <h2>{obj.displayName}</h2>
             <ul className="menuItemUl">
               {obj.itemsCollection.items.map((item) => (
                 <If condition={item.houseFavorite}>
