@@ -14,17 +14,14 @@ function Homepage() {
       <main>
         <div className='welcome-msg'>
           <h2>Welcome to the Woodsman Cafe!</h2>
+          <p>
+            Whether you are taking a road trip on Highway 200, vacationing in the area, or adventuring on the Soo Line Trail, the Woodsman Cafe is worth the stop. 
+          </p>
+
+          <div>
+            Embedded Social Media and Travel Reviews (Facebook, TripAdvisor, Yelp, Google)
+          </div>
         </div>
-        <div className='welcome-image'>
-          <img className="woodsman-img" alt='WoodsmanCafe' src={Woodsman}></img>
-          <p>This is just filler text for when there will be a welcome message to greet visitors as they enter into the Woodsmand Cafe Website!! I am extremely excited to get something up and running for Bob and Julie.</p>
-          
-        </div>
-        <section>
-          <img className="omlette" alt="Mexican Omlette" src={omlette} />
-          <img className="Logger" alt="Logger" src={logger}/>
-        </section>
-      
       </main>
     )
 }
