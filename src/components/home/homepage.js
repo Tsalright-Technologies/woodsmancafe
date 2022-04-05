@@ -1,8 +1,5 @@
 import React from 'react';
-import Woodsman from '../../images/woodsman.jpg';
 import './homepage.scss';
-import omlette from "../../images/mexican_omlette.jpg"
-import logger from "../../images/logger.jpg"
 
 // put the about owner stuff here
 // have the images on the landing page
