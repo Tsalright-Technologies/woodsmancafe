@@ -19,17 +19,6 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-item">
-            <h3>Resources</h3>
-            <ul>
-              <li>
-                Lovin Scoopful
-              </li>
-              <li>
-                Menu
-              </li>
-            </ul>
-          </div>
-          <div className="footer-item">
             <h3>Contact</h3>
             <ul>
               <li>

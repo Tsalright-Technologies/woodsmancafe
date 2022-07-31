@@ -8,6 +8,7 @@ body, html {
 
 body {
   // background-color: #9D9E99;
+  background-image: url(images/background.jpg);
   display: flex;
   justify-content: center;
   height: 100%;
@@ -44,7 +45,7 @@ code {
     monospace;
 }
 
-@font-face {
-  font-family: 'Logger';
-  src: local('LOGGER'), url(./fonts/LOGGER.woff) format('woff');
-}
+// @font-face {
+//   font-family: 'Logger';
+//   src: local('LOGGER'), url(./fonts/LOGGER.woff) format('woff');
+// }

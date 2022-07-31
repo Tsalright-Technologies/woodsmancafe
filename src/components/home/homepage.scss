@@ -1,10 +1,13 @@
 main {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 50px;
+  padding: 2em;
 
   div.welcome-msg {
     align-self: center;
-    margin-bottom: 3em;
+    margin-bottom: .5em;
 
     h2 {
       margin-top: 0;
@@ -22,6 +25,5 @@ main {
       height: 288px;
       box-shadow: 4px 4px 6px #000;
     }
-
   }
 }
