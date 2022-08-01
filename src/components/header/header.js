@@ -13,7 +13,7 @@ export default function Header() {
             <NavLink className="navLinks" to='/'>Home</NavLink>
           </li>
           <li className="dropdown">
-            <NavLink className="dropbtn navLinks" to='/'>Menu</NavLink>
+            <NavLink className="dropbtn navLinks" to='/main-menu'>Menu</NavLink>
             <div className='dropdown-content'>
               <NavLink className="subMenu" to='/kids-menu'>Kids Menu</NavLink>
               <NavLink className="subMenu" to='/breakfast-menu'>Breakfast Menu</NavLink>

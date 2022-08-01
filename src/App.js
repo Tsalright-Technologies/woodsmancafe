@@ -22,14 +22,16 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/lovin-scoopful' component={LovinScoopful}/>
-          <Route exact path='/about' component={About}/>
-          <Route exact path='/breakfast-menu' component={BreakfastMenu} />
-          <Route exact path='/kids-menu' component={KidsMenu} />
-          <Route exact path='/main-menu' component={Main}/>
-        </Switch>
+        <div className="container">
+          <Switch >
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/lovin-scoopful' component={LovinScoopful}/>
+            <Route exact path='/about' component={About}/>
+            <Route exact path='/breakfast-menu' component={BreakfastMenu} />
+            <Route exact path='/kids-menu' component={KidsMenu} />
+            <Route exact path='/main-menu' component={Main}/>
+          </Switch>  
+        </div>
         <Footer />
       </>
     );
