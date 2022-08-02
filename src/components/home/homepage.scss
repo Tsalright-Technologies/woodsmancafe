@@ -25,22 +25,23 @@ main {
 
 .content-images {
   display: flex;
-  
   margin-top: 2rem;
 }
 
-@media only screen and (min-width: 29.8125rem /*477px*/) {
-	.content-images {
-			justify-content: space-around;
-	}
-}
+// @media only screen and (min-width: 29.8125rem /*477px*/) {
+// 	.content-images {
+// 			justify-content: space-around;
+// 	}
+// }
+
 @media only screen and (min-width: 77.5rem /*1240px*/ ) {
 	.content-images {
 			justify-content: space-evenly;
 	}
 }
 
-@media only screen and (max-width: 90.5rem ) {
+// @media only screen and (max-width: 90.5rem ) {
+@media only screen and (max-width: 63rem ) {
 	.content-images {
 			display: none;
 	}
@@ -50,7 +51,7 @@ main {
   flex-basis: 429px;
   flex-shrink: 1;
   border-radius: 50px;
-  height: 288px;
+  height: auto;
   box-shadow: 4px 4px 6px #000;
 }
 

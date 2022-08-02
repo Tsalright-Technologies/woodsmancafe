@@ -19,11 +19,11 @@ export default function Footer() {
           <div class="ft-main-item">
             <h2 class="ft-title">Navigation</h2>
             <ul>
-              <li><NavLink className="navLinks" to='/'>Home</NavLink></li>
-              <li><NavLink className="subMenu" to='/kids-menu'>Kids Menu</NavLink></li>
-              <li><NavLink className="subMenu" to='/breakfast-menu'>Breakfast Menu</NavLink></li>
-              <li><NavLink className="subMenu" to='/main-menu'>Main Menu</NavLink></li>
-              <li><NavLink className="navLinks" to='/lovin-scoopful'>Lovin Scoopful</NavLink></li>
+              <li><NavLink to='/'>Home</NavLink></li>
+              <li><NavLink to='/kids-menu'>Kids Menu</NavLink></li>
+              <li><NavLink to='/breakfast-menu'>Breakfast Menu</NavLink></li>
+              <li><NavLink to='/main-menu'>Main Menu</NavLink></li>
+              <li><NavLink to='/lovin-scoopful'>Lovin Scoopful</NavLink></li>
             </ul>
           </div>
           <div class="ft-main-item">

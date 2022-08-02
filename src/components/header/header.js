@@ -5,23 +5,17 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="headerContainer">
-      <h1 className="logo">THE WOODSMAN CAFE</h1>
-      <nav>
+    <header>
+      <h1 className="hd-title">THE WOODSMAN CAFE</h1>
+      <nav className="menu-area">
         <ul>
-          <li>
-            <NavLink className="navLinks" to='/'>Home</NavLink>
-          </li>
-          <li className="dropdown">
-            <NavLink className="dropbtn navLinks" to='/main-menu'>Menu</NavLink>
-            <div className='dropdown-content'>
-              <NavLink className="subMenu" to='/kids-menu'>Kids Menu</NavLink>
-              <NavLink className="subMenu" to='/breakfast-menu'>Breakfast Menu</NavLink>
-              <NavLink className="subMenu" to='/main-menu'>Main Menu</NavLink>
-            </div>
-          </li>
-          <li>
-            <NavLink className="navLinks" to='/lovin-scoopful'>Lovin Scoopful</NavLink>
+          <li><NavLink className="hd-links" to='/'>Home</NavLink></li>
+          <li><NavLink className="hd-links" to='/main-menu'>Menu</NavLink>
+            <ul className="dropdown">
+              <li><NavLink className="subMenu" to='/kids-menu'>Kids Menu</NavLink></li>
+              <li><NavLink className="subMenu" to='/breakfast-menu'>Breakfast Menu</NavLink></li>
+              <li><NavLink className="subMenu" to='/main-menu'>Main Menu</NavLink></li>
+            </ul>
           </li>
         </ul>
       </nav>
