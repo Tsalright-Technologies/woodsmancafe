@@ -8,7 +8,7 @@ import "../menu.scss";
 function Main() {
   const GET_ITEMS = gql`
     {
-      subMenuCollection(where: { name_contains: "Main"}, order: [displayOrder_ASC]) {
+      subMenuCollection(where: { name_contains: "Main:"}, order: [displayOrder_ASC]) {
         items {
           name
           displayName

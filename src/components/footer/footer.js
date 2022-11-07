@@ -1,23 +1,41 @@
 import React from "react";
 import './footer.scss'
+import { useQuery } from "@apollo/react-hooks";
+import gql from "graphql-tag";
 
 import { NavLink } from "react-router-dom";
 
 export default function Footer() {
+  const GET_ITEMS = gql`
+    {
+      hoursCollection (order: sortOrder_ASC) { 
+        items {
+            hoursOfOperation
+            sortOrder
+        }
+      }
+    }
+  `;
+
+  const { loading, error, data } = useQuery(GET_ITEMS);
+
+  if (error) return <h1>Something is wrong!!</h1>;
+  if (loading) return <h1>Loading...</h1>;
+
   return (
     <>
       <footer>
         <section className="ft-main">
-          <div class="ft-main-item">
-            <h2 class="ft-title">Hours</h2>
+          <div className="ft-main-item">
+            <h2 className="ft-title">Hours</h2>
             <ul>
-              <li>M - TH: 6AM - 7PM</li> 
-              <li>F - Sa: 6AM - 8PM</li>
-              <li>Su: 6AM - 2PM</li>
+              {data.hoursCollection.items.map((h) => (
+                <li key={h.sortOrder}>{h.hoursOfOperation}</li>
+              ))}
             </ul>
           </div>
-          <div class="ft-main-item">
-            <h2 class="ft-title">Navigation</h2>
+          <div className="ft-main-item">
+            <h2 className="ft-title">Navigation</h2>
             <ul>
               <li><NavLink to='/'>Home</NavLink></li>
               <li><NavLink to='/kids-menu'>Kids Menu</NavLink></li>
@@ -26,11 +44,10 @@ export default function Footer() {
               <li><NavLink to='/lovin-scoopful'>Lovin Scoopful</NavLink></li>
             </ul>
           </div>
-          <div class="ft-main-item">
-            <h2 class="ft-title">Contact</h2>
+          <div className="ft-main-item">
+            <h2 className="ft-title">Contact</h2>
             <ul>
               <li>Phone: (218) 566-2080</li>
-              <li>Email: <a href="mailto:woody@woodsmancafe.com">woody@woodsmancafe.com</a></li>
             </ul>
           </div>
         </section>
@@ -41,8 +58,8 @@ export default function Footer() {
           </ul>
         </section> */}
 
-        <section class="ft-legal">
-          <ul class="ft-legal-list">
+        <section className="ft-legal">
+          <ul className="ft-legal-list">
             <li>&copy; 2022 Copyright Woodsman Cafe</li>
           </ul>
         </section>
