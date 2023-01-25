@@ -1,6 +1,5 @@
 import React from 'react';
 import './homepage.scss';
-import Woodsman from '../../images/woodsman.jpg';
 import Woody from '../../images/woody.jpg';
 import Logger from '../../images/logger.jpg';
 
