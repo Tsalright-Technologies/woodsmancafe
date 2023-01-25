@@ -13,7 +13,9 @@ function Main() {
           name
           displayName
           subTitle
-          footer
+          footer {
+            json
+          }
           displayOrder
           itemsCollection {
             items {
