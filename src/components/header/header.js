@@ -15,6 +15,7 @@ export default function Header() {
               <li><NavLink className="subMenu" to='/kids-menu'>Kids Menu</NavLink></li>
               <li><NavLink className="subMenu" to='/breakfast-menu'>Breakfast Menu</NavLink></li>
               <li><NavLink className="subMenu" to='/main-menu'>Main Menu</NavLink></li>
+              <li><NavLink className="subMenu" to='/dinner-menu'>Dinner Menu</NavLink></li>
             </ul>
           </li>
         </ul>

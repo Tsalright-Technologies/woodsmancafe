@@ -5,10 +5,10 @@ import Item from "../item.js"
 
 import "../menu.scss";
 
-function Menu() {
+function BreakfastMenu() {
   const GET_ITEMS = gql`
     {
-      subMenuCollection(where: { name_contains: "Breakfast"}, order: [displayOrder_ASC]) {
+      subMenuCollection(where: { name_not_contains: "Kids", name_contains: "Breakfast:"}, order: [displayOrder_ASC]) {
         items {
           name
           displayName
@@ -42,4 +42,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default BreakfastMenu;
