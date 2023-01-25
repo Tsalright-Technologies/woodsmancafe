@@ -12,6 +12,8 @@ function Main() {
         items {
           name
           displayName
+          subTitle
+          footer
           displayOrder
           itemsCollection {
             items {
