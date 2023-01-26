@@ -1,6 +1,6 @@
 import React from "react";
 import { If, Then, Else } from "react-if";
-
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import BigFoot from '../../images/sasquatch.png'
 // multi column in the menu section
@@ -40,7 +40,9 @@ function Item(props) {
               </If>
             ))}
           </ul>
-          <p>{obj.footer}</p>
+          {
+            obj.footer != null && obj.footer.json != null && documentToReactComponents(obj.footer.json)
+          }
         </div>
       ))}
     </div>
