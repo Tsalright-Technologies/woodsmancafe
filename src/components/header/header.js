@@ -89,7 +89,7 @@ export default function Header() {
               aria-haspopup="true"
 
             >
-              <NavLink className="hd-links" to='/main-menu'>Menu</NavLink>
+              <p className="hd-links" >Menu</p>
             </MenuItem>
             <Menu
               id="sub-menu"
