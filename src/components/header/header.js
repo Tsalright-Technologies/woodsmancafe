@@ -42,7 +42,7 @@ export default function Header() {
           <nav className="menu-area">
             <ul>
               <li><NavLink className="hd-links" to='/'>Home</NavLink></li>
-              <li><NavLink className="hd-links" to='/main-menu'>Menu</NavLink>
+              <li><p className="hd-links">Menu</p>
                 <ul className="dropdown">
                   <li><NavLink className="subMenu" to='/kids-menu'>Kids Menu</NavLink></li>
                   <li><NavLink className="subMenu" to='/breakfast-menu'>Breakfast Menu</NavLink></li>
@@ -89,7 +89,7 @@ export default function Header() {
               aria-haspopup="true"
 
             >
-              <NavLink className="hd-links" to='/main-menu'>Menu</NavLink>
+              <p className="hd-links" >Menu</p>
             </MenuItem>
             <Menu
               id="sub-menu"
