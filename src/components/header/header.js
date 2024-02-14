@@ -10,9 +10,7 @@ import { If, Then, Else } from "react-if"
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import MenuIcon from '@mui/icons-material/Menu';
-import { MenuList } from "@mui/material";
 
 export default function Header() {
   const screenSize = useScreenSize();
@@ -34,22 +32,6 @@ export default function Header() {
     setAnchorEl2(null);
   };
 
-  const options = [
-    'None',
-    'Atria',
-    'Callisto',
-    'Dione',
-    'Ganymede',
-    'Hangouts Call',
-    'Luna',
-    'Oberon',
-    'Phobos',
-    'Pyxis',
-    'Sedna',
-    'Titania',
-    'Triton',
-    'Umbriel',
-  ];
   
   const ITEM_HEIGHT = 48;
   return (
