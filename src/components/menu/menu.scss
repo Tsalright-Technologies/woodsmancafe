@@ -1,76 +1,166 @@
-div.menuDiv {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: 85%;
-  margin: auto;
-  // align-items: flex-start; 
+@media only screen and (min-width: 29.8125rem /*477px*/) {
   
-  h2{
-    margin: auto;
-    font-size: 3em;
-  }
-
-  p {
-    text-align: center;
-  }
-
-  div.menuItems {
+  div.menuDiv {
     display: flex;
     flex-direction: column;
-    // margin: auto;
     height: auto;
-    // align-items: flex-start;
-
-    &.Sides {
-      height: auto;
+    width: 85%;
+    margin: auto;
+    // align-items: flex-start; 
+    
+    h2{
+      margin: auto;
+      font-size: 3em;
     }
-  }
-
-  ul.menuItemUl {
-    display: flex;
-    // flex-direction: column;
-    // justify-items: flex-start;
-    padding: 0 1rem 1rem;
-    list-style: none;
-    flex-wrap: wrap;
-    text-align: center;
-
-
-    li.itemCollection {
+    h3 {
+      margin: auto;
+      font-size: 1em;
+    }
+    p {
+      text-align: center;
+    }
+    div.menuItems {
       display: flex;
       flex-direction: column;
-      width: 50%;
-      // justify-content: flex-start;
-      padding: 0 1em;
-      text-align: center;
+      // margin: auto;
+      height: auto;
+      // align-items: flex-start;
       
-
-      h4{
-        font-size: 1.5em;
-        margin: 0;
-
-      }
-
-      // &.houseFavorite {
-      //     padding-left: 0;
-
-      // }
-
-      p{
-        margin-top: 0;
-        font-size: 1.25em;
-      }
-      img.bigFoot {
-        width: .65em;
-        margin-right: .25em;
-        height: .75em;
-      }
-
       &.Sides {
         height: auto;
-        margin: 0;
+      }
+    }
+    
+    ul.menuItemUl {
+      display: flex;
+      // flex-direction: column;
+      // justify-items: flex-start;
+      padding: 0 1rem 1rem;
+      list-style: none;
+      flex-wrap: wrap;
+      text-align: center;
+      
+      
+      li.itemCollection {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        // justify-content: flex-start;
+        padding: 0 1em;
+        text-align: center;
+        
+        
+        h4{
+          font-size: 1.5em;
+          margin: 0;
+          
+        }
+        
+        // &.houseFavorite {
+          //     padding-left: 0;
+          
+          // }
+          
+          p{
+            margin-top: 0;
+            font-size: 1.25em;
+          }
+          img.bigFoot {
+            width: .65em;
+            margin-right: .25em;
+            height: .75em;
+          }
+          
+          &.Sides {
+            height: auto;
+            margin: 0;
+          }
+        }
       }
     }
   }
+    
+@media only screen and (max-width: 29.8125rem /*477px*/) {
+  body {
+    margin: auto;
+  }
+  div.menuDiv {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    // align-items: flex-start; 
+    
+    h2{
+      margin: auto;
+      font-size: 2em;
+    }
+    h3 {
+      margin: auto;
+      font-size: 1em;
+    }
+    p {
+      text-align: center;
+    }
+    div.menuItems {
+      display: flex;
+      flex-direction: column;
+      // margin: auto;
+      height: auto;
+      // align-items: flex-start;
+      
+      &.Sides {
+        height: auto;
+      }
+    }
+    
+    ul.menuItemUl {
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-start;
+      padding: 0;
+      list-style: none;
+      flex-wrap: wrap;
+      text-align: center;
+      
+      
+      li.itemCollection {
+        display: flex;
+        flex-direction: column;
+        // width: 50%;
+        // justify-content: flex-start;
+        padding: 0;
+        text-align: center;
+        
+        
+        h4{
+          font-size: 1.1em;
+          margin: 0;
+          
+        }
+        
+        // &.houseFavorite {
+          //     padding-left: 0;
+          
+          // }
+          
+          p{
+            margin-top: 0;
+            font-size: .9em;
+          }
+          img.bigFoot {
+            width: .65em;
+            margin-right: .25em;
+            height: .75em;
+          }
+          
+          &.Sides {
+            height: auto;
+            margin: 0;
+          }
+        }
+      }
+    }
 }

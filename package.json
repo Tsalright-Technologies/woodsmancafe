@@ -5,13 +5,17 @@
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "@contentful/rich-text-react-renderer": "^15.16.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.10",
+    "@mui/material": "^5.15.10",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
     "apollo-boost": "^0.4.9",
     "apollo-link-http": "^1.5.17",
     "bootstrap": "^4.5.3",
-    "contentful": "^8.1.1",
+    "contentful": "^10.6.21",
     "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
     "lit-element": "^2.4.0",
@@ -22,11 +26,11 @@
     "react-if": "^4.0.1",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build && cp staticwebapp.config.json build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

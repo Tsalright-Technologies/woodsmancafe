@@ -4,19 +4,32 @@ header {
   flex-direction: column;
   text-align: center;
 
+  @media screen and (max-width: 64rem /*1024*/) {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10rem;
+  }
+  @media screen and (max-width: 39.8125rem /*637.04*/) {
+    gap: 2rem;
+}
+
   .hd-title {
     font-size: 5.5rem;
     margin-top: 1rem;
     margin-bottom: 0;
     text-shadow: -.15em .15em .15em #000;
   
-    @media screen and (max-width: 77.5rem) {
+    @media screen and (max-width: 64rem /*1240*/) {
       font-size: 3em;
     }
     
-    @media screen and (max-width: 39.8125rem) {
+    @media screen and (max-width: 39.8125rem /*637.04*/) {
         font-size: 1.5em;
     }
+  }
+
+  #long-menu {
+    justify-content: flex-end;
   }
 }
 
@@ -36,7 +49,7 @@ nav {
       font-size: 2.5rem;
       font-weight: bold;
 
-      @media screen and (max-width: 77.5rem) {
+      @media screen and (max-width: 64rem) {
         font-size: 2em;
       }
       
@@ -65,6 +78,52 @@ nav {
     }
   }
 }
+
+@media screen and (max-width: 64rem) {
+  #long-menu{
+    
+    ul{
+      background-color: black;
+
+      li:hover {
+        background-color: #555;
+      }
+    }
+    .hd-links {
+      color: #ffffff;
+      text-shadow: -.15em .15em .15em #000;
+      font-size: 1.1rem;
+      font-weight: bold;
+      
+      &:hover{
+        transform: scale(1.25)
+      }
+    }
+    
+  }
+  #sub-menu{
+    ul{
+      background-color: black;
+
+      li:hover {
+        background-color: #555;
+      }
+    }
+    
+    .subMenu {
+      color: #ffffff;
+      text-shadow: -.15em .15em .15em #000;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+
+  a:link{
+        text-decoration: none;
+  }
+
+}
+
 
 .menu-area .dropdown a{
   display: flex;

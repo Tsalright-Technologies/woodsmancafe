@@ -18,7 +18,12 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-image: url(images/background.jpg);
-  color: #ffff
+  color: #ffff;
+
+  @media screen and (max-width: 29.8125rem /*477px*/) {
+    max-width: 477;
+  }
+
 }
 
 .container {
@@ -39,11 +44,9 @@ body {
 //   sans-serif;
 
 
-//   #root {
-//     display: flex;
-//     flex-direction: column;
-//     flex: 1;
-//   }
+  #root {
+    width: 100%;
+  }
 
 //   main{
 //     flex: 1;
